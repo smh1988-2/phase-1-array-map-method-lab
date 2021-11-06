@@ -11,6 +11,34 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
-}
+const titleCased = (arr) => {
+  return tutorials.map(str => str.split(" ").map(w => w[0].toUpperCase() + w.substr(1)).join(" ") );
+};
+
+titleCased();
+console.log(titleCased());
+
+
+
+
+
+
+
+
+// const students = ["harry", "ron", "hermione", "ginevra"];
+// const teachers = ["dumbledore", "hagrid", "mcgonagall"]
+// const robots = [
+//   { name: 'Johnny 5', modes: 5, isActivated: false, },
+//   { name: 'C3PO', modes: 3, isActivated: false, },
+//   { name: 'Sonny', modes: 2.5, isActivated: false, },
+//   { name: 'Baymax', modes: 1.5, isActivated: false, },
+// ];
+
+// // for (student of students) {
+// //   rollCall.push(student.toUpperCase() + " was created by a TERF :(");
+// // }
+
+// const tellTheTruth = (arr) => arr.map(name => name.toUpperCase() + " was created by a TERF")
+
+// console.log(tellTheTruth(students));
+// console.log(tellTheTruth(teachers));
